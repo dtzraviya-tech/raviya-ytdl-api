@@ -99,7 +99,8 @@ async function ytmp3(url) {
 
   return {
     status: true,
-    creator: "@DanuZz",
+    creator: "Raviya",
+    owner: "Raviya",
     title: result.title,
     channel: result.author,
     duration: result.duration,
@@ -119,7 +120,8 @@ async function ytmp4(url, quality = "720p") {
 
   return {
     status: true,
-    creator: "@DanuZz",
+    creator: "Raviya",
+    owner: "Raviya",
     title: result.title,
     channel: result.author,
     duration: result.duration,
@@ -142,7 +144,8 @@ async function search(teks) {
     let data = await yts(teks);
     return {
       status: true,
-      creator: "@DanuZz",
+      creator: "Raviya",
+      owner: "Raviya",
       results: data.all
     };
   } catch (error) {
