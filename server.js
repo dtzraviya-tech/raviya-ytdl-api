@@ -52,8 +52,11 @@ app.get('/api/ytmp4', async (req, res) => {
     res.json(result);
 });
 
-// Start the server
+/// Start the server (ඔයාගේ කලින් තිබ්බ කෑල්ල)
 app.listen(PORT, () => {
     console.log(`✅ Server is running on http://localhost:${PORT}`);
     console.log(`🚀 API Creator: @raviya`);
 });
+
+// Vercel වලට අනිවාර්යයෙන් මේ පේළිය ඕනේ
+module.exports = app;
